@@ -2,11 +2,11 @@
 
 Thank you for helping make this the most comprehensive AI Agent use case library!
 
-**Language / 语言:** English | [简体中文](CONTRIBUTING.zh-CN.md)
+**Language:** English | [简体中文](CONTRIBUTING.zh-CN.md)
 
 ---
 
-## How to Contribute · 如何贡献
+## How to Contribute
 
 ### 1. Fork & Clone
 
@@ -15,7 +15,7 @@ git clone https://github.com/YOUR_USERNAME/awesome-workbuddy-use-cases.git
 cd awesome-workbuddy-use-cases
 ```
 
-### 2. Find the Right File · 找到正确的文件
+### 2. Find the Right File
 
 Place your case in the most relevant file:
 
@@ -27,7 +27,7 @@ Place your case in the most relevant file:
 
 Also add a summary line in `README.md` under the relevant section.
 
-### 3. Use the Template · 使用模板
+### 3. Use the Template
 
 #### For README / by-task files:
 
@@ -44,7 +44,6 @@ Example:
 
 ```markdown
 - **[Case Name]** — [Scenario description in English.]
-  **[案例名称]：** [中文场景描述。]
 ```
 
 #### For whitepaper table files:
@@ -55,28 +54,23 @@ Example:
 
 ---
 
-## Case Quality Checklist · 案例质量检查
+## Case Quality Checklist
 
 Before submitting, verify your case meets these criteria:
 
 - [ ] **Specific and actionable** — Not "help me work better" but "read CSV, calculate anomalies, email report."
-  具体且可操作 — 不是"帮我提高效率"，而是"读取 CSV、计算异常值、发送报告邮件"。
 
 - [ ] **Names concrete inputs and outputs** — What file/data goes in? What file/message/action comes out?
-  明确输入和输出 — 什么文件/数据进入？什么文件/消息/操作产出？
 
 - [ ] **Real workflow, not hypothetical** — Based on a task that someone actually does regularly.
-  真实工作流 — 基于有人实际定期执行的任务。
 
 - [ ] **Correct Agent capabilities labeled** — The capability tags should reflect what the Agent actually needs.
-  正确标注能力标签 — 能力标签应反映 Agent 实际需要的能力。
 
 - [ ] **Not a duplicate** — Search the repo for similar cases before adding.
-  不重复 — 添加前先搜索仓库中是否有类似案例。
 
 ---
 
-## Submitting a PR · 提交 PR
+## Submitting a PR PR
 
 1. Create a new branch: `git checkout -b add-case-[brief-name]`
 2. Make your changes
@@ -89,7 +83,7 @@ Example: `Add: Automated lease renewal reminder — by-profession/real-estate`
 
 ---
 
-## Capability Tag Reference · 能力标签参考
+## Capability Tag Reference
 
 Use consistent tags so cases are easily searchable:
 
@@ -118,6 +112,6 @@ Use consistent tags so cases are easily searchable:
 
 ---
 
-## Questions? · 有疑问？
+## Questions?？
 
 Open an [Issue](../../issues) or start a [Discussion](../../discussions).
