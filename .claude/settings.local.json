@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(mkdir -p /Users/cheercheung/mess/cursor/awesome-workbuddy-use-cases/use-cases/by-profession\nmkdir -p /Users/cheercheung/mess/cursor/awesome-workbuddy-use-cases/use-cases/by-task\nmkdir -p /Users/cheercheung/mess/cursor/awesome-workbuddy-use-cases/use-cases/whitepaper)"
-    ]
-  }
-}
