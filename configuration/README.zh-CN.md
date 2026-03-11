@@ -4,7 +4,7 @@
 
 **语言:** [English](README.md) | 简体中文
 
-[← 返回主 README](../../README.zh-CN.md)
+[← 返回主 README](../README.zh-CN.md)
 
 ---
 
