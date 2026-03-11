@@ -247,150 +247,150 @@ This repository is a curated, community-maintained collection of **230+ real-wor
 
 > `Scheduled Tasks` `Web Scraping` `File I/O` `Code Execution` `API Calls`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 1 | **Daily financial report summary** — Scheduled scraping, extract core data, send summary to Telegram. | `Scheduling` `Web Scraping` `NLP` |
-| 2 | **Invoice auto-reimbursement entry** — Monitor email folder, OCR invoices, auto-submit to OA system. | `File Monitoring` `OCR` `API Call` |
-| 3 | **Competitor price monitoring** — Scheduled scraping of e-commerce pages, auto-update local CSV. | `Scheduling` `Web Scraping` `File I/O` |
-| 4 | **Sales leads (CRM) cleaning** — Read CRM export, remove invalids, deduplicate, tag by industry. | `File I/O` `Code Execution` `NLP` |
-| 5 | **Real-time multi-currency quote calculation** — Auto-query live exchange rates and compute on demand. | `API Call` `NLP` `Logic` |
-| 6 | **Auto-write weekly report draft** — Every Friday, extract calendar/Git/email activity, generate report. | `Multi-source API` `Memory` `NLG` |
-| 7 | **Business report anomaly alert** — Read monitoring output, alert when conversion rate drops. | `File Monitoring` `Logic` `Push Notification` |
-| 8 | **Desktop file auto-organization** — One-click classify and rename documents in Downloads by content. | `File I/O` `NLP` `Shell Commands` |
-| 9 | **Cross-platform task status sync** — Auto-sync Notion project progress updates to Jira. | `Cross-platform API` `Data Mapping` |
-| 10 | **Meeting recording → action items** — Extract Action Items from transcript, write to Todoist. | `File I/O` `NLP` `API Call` |
-| 11 | **Employee attendance anomaly stats** — Calculate and filter late/early departure records from raw data. | `File I/O` `Code Execution` |
-| 12 | **Morning industry news brief** — Daily 7am: collect top-5 industry news, summarize, send to group. | `Scheduling` `Web Search` `NLG` |
-| 13 | **Customer service chat sentiment analysis** — Batch-read previous day's chats, score service quality. | `Batch File Read` `NLP Sentiment` |
-| 14 | **Local data auto-visualization** — From CSV in chat, auto-write Python to generate charts. | `Code Generation` `Code Execution` `File I/O` |
-| 15 | **Server/website status probe** — Periodically ping company website, alert via WhatsApp if down. | `Scheduling` `HTTP Request` `Push Notification` |
+| Case | Description |
+| :--- | :--- |
+| **Daily financial report summary** | **Daily financial report summary** — Scheduled scraping, extract core data, send summary to Telegram. <br> **核心能力:** `Scheduling` `Web Scraping` `NLP` |
+| **Invoice auto-reimbursement entry** | **Invoice auto-reimbursement entry** — Monitor email folder, OCR invoices, auto-submit to OA system. <br> **核心能力:** `File Monitoring` `OCR` `API Call` |
+| **Competitor price monitoring** | **Competitor price monitoring** — Scheduled scraping of e-commerce pages, auto-update local CSV. <br> **核心能力:** `Scheduling` `Web Scraping` `File I/O` |
+| **Sales leads (CRM) cleaning** | **Sales leads (CRM) cleaning** — Read CRM export, remove invalids, deduplicate, tag by industry. <br> **核心能力:** `File I/O` `Code Execution` `NLP` |
+| **Real-time multi-currency quote calculation** | **Real-time multi-currency quote calculation** — Auto-query live exchange rates and compute on demand. <br> **核心能力:** `API Call` `NLP` `Logic` |
+| **Auto-write weekly report draft** | **Auto-write weekly report draft** — Every Friday, extract calendar/Git/email activity, generate report. <br> **核心能力:** `Multi-source API` `Memory` `NLG` |
+| **Business report anomaly alert** | **Business report anomaly alert** — Read monitoring output, alert when conversion rate drops. <br> **核心能力:** `File Monitoring` `Logic` `Push Notification` |
+| **Desktop file auto-organization** | **Desktop file auto-organization** — One-click classify and rename documents in Downloads by content. <br> **核心能力:** `File I/O` `NLP` `Shell Commands` |
+| **Cross-platform task status sync** | **Cross-platform task status sync** — Auto-sync Notion project progress updates to Jira. <br> **核心能力:** `Cross-platform API` `Data Mapping` |
+| **Meeting recording → action items** | **Meeting recording → action items** — Extract Action Items from transcript, write to Todoist. <br> **核心能力:** `File I/O` `NLP` `API Call` |
+| **Employee attendance anomaly stats** | **Employee attendance anomaly stats** — Calculate and filter late/early departure records from raw data. <br> **核心能力:** `File I/O` `Code Execution` |
+| **Morning industry news brief** | **Morning industry news brief** — Daily 7am: collect top-5 industry news, summarize, send to group. <br> **核心能力:** `Scheduling` `Web Search` `NLG` |
+| **Customer service chat sentiment analysis** | **Customer service chat sentiment analysis** — Batch-read previous day's chats, score service quality. <br> **核心能力:** `Batch File Read` `NLP Sentiment` |
+| **Local data auto-visualization** | **Local data auto-visualization** — From CSV in chat, auto-write Python to generate charts. <br> **核心能力:** `Code Generation` `Code Execution` `File I/O` |
+| **Server/website status probe** | **Server/website status probe** — Periodically ping company website, alert via WhatsApp if down. <br> **核心能力:** `Scheduling` `HTTP Request` `Push Notification` |
 
 ### 2. Document Management & Deep Reading
 
 > `PDF Parsing` `RAG` `OCR` `Semantic Comparison` `File Monitoring`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 16 | **Long document immersive translation** — Translate hundreds-of-pages PDF maintaining terminology consistency. | `Large File Chunking` `Memory` `MT` |
-| 17 | **Bidding document version comparison** — Compare two Word docs, highlight clause differences, output risk summary. | `File Parsing` `Semantic Diff` |
-| 18 | **Legal contract initial risk review** — Auto-scan downloaded contract, identify unfavorable clauses. | `File Read` `Domain Knowledge` `NLP` |
-| 19 | **Resume auto-screening** — Score all resume attachments from recruiting email vs JD, sort into table. | `Batch Processing` `OCR` `NLP Matching` |
-| 20 | **Local knowledge base index building** — Monitor folder, extract tags and summaries from new docs, update index. | `Directory Monitoring` `Summarization` `File Write` |
-| 21 | **Email attachment rule-based archiving** — Detect key client emails, auto-download attachments by year/project. | `IMAP` `File System` |
-| 22 | **Complex data table split & distribute** — Split company-wide Excel by department, email to each head. | `Code Execution` `Email Send` |
-| 23 | **Company policy "living dictionary"** — Use employee handbook as knowledge base to answer policy questions. | `Local RAG` `NLP` |
-| 24 | **Historical chat & decision tracing** — Search long-term chat logs for past discussions with context. | `DB Search` `Long-term Memory` `NLP` |
-| 25 | **Shared file co-sign tracking** — Monitor collaborative doc edits, remind unsigned stakeholders. | `Doc API` `Data Diff` `Scheduling` |
-| 26 | **Sensitive data auto-masking** — Before sending, auto-detect and mask ID numbers, financial data. | `Regex` `NER` `File Rewrite` |
-| 27 | **Product operation manual generation** — From PM notes and screenshots, generate structured user guide. | `Multimodal` `NLG` |
-| 28 | **Whiteboard photo → structured notes** — OCR meeting whiteboard photo, convert to tidy Markdown. | `Vision/OCR` `Formatted Output` |
-| 29 | **Long PPT → one-page summary** — Read 50-page PPT, extract core arguments and conclusions. | `Doc Parsing` `Summarization` |
-| 30 | **Code / doc change summary** — Read Git commits or doc edits, generate readable release notes. | `Terminal/API` `Technical NLG` |
+| Case | Description |
+| :--- | :--- |
+| **Long document immersive translation** | **Long document immersive translation** — Translate hundreds-of-pages PDF maintaining terminology consistency. <br> **核心能力:** `Large File Chunking` `Memory` `MT` |
+| **Bidding document version comparison** | **Bidding document version comparison** — Compare two Word docs, highlight clause differences, output risk summary. <br> **核心能力:** `File Parsing` `Semantic Diff` |
+| **Legal contract initial risk review** | **Legal contract initial risk review** — Auto-scan downloaded contract, identify unfavorable clauses. <br> **核心能力:** `File Read` `Domain Knowledge` `NLP` |
+| **Resume auto-screening** | **Resume auto-screening** — Score all resume attachments from recruiting email vs JD, sort into table. <br> **核心能力:** `Batch Processing` `OCR` `NLP Matching` |
+| **Local knowledge base index building** | **Local knowledge base index building** — Monitor folder, extract tags and summaries from new docs, update index. <br> **核心能力:** `Directory Monitoring` `Summarization` `File Write` |
+| **Email attachment rule-based archiving** | **Email attachment rule-based archiving** — Detect key client emails, auto-download attachments by year/project. <br> **核心能力:** `IMAP` `File System` |
+| **Complex data table split & distribute** | **Complex data table split & distribute** — Split company-wide Excel by department, email to each head. <br> **核心能力:** `Code Execution` `Email Send` |
+| **Company policy "living dictionary"** | **Company policy "living dictionary"** — Use employee handbook as knowledge base to answer policy questions. <br> **核心能力:** `Local RAG` `NLP` |
+| **Historical chat & decision tracing** | **Historical chat & decision tracing** — Search long-term chat logs for past discussions with context. <br> **核心能力:** `DB Search` `Long-term Memory` `NLP` |
+| **Shared file co-sign tracking** | **Shared file co-sign tracking** — Monitor collaborative doc edits, remind unsigned stakeholders. <br> **核心能力:** `Doc API` `Data Diff` `Scheduling` |
+| **Sensitive data auto-masking** | **Sensitive data auto-masking** — Before sending, auto-detect and mask ID numbers, financial data. <br> **核心能力:** `Regex` `NER` `File Rewrite` |
+| **Product operation manual generation** | **Product operation manual generation** — From PM notes and screenshots, generate structured user guide. <br> **核心能力:** `Multimodal` `NLG` |
+| **Whiteboard photo → structured notes** | **Whiteboard photo → structured notes** — OCR meeting whiteboard photo, convert to tidy Markdown. <br> **核心能力:** `Vision/OCR` `Formatted Output` |
+| **Long PPT → one-page summary** | **Long PPT → one-page summary** — Read 50-page PPT, extract core arguments and conclusions. <br> **核心能力:** `Doc Parsing` `Summarization` |
+| **Code / doc change summary** | **Code / doc change summary** — Read Git commits or doc edits, generate readable release notes. <br> **核心能力:** `Terminal/API` `Technical NLG` |
 
 ### 3. Communication & Scheduling
 
 > `Calendar API` `Email Automation` `Timezone Logic` `Long-term Memory`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 31 | **Complex email intelligent drafting** — Given a complaint email and instruction, auto-generate professional reply. | `Context Understanding` `NLG Tone Control` |
-| 32 | **Schedule conflict auto-coordination** — When meeting invite arrives, check calendar; reply with available slots if conflict. | `Calendar API` `Time Logic` `Auto-reply` |
-| 33 | **Cross-timezone best meeting time** — Given US/EU/CN participants, exclude sleep hours, recommend intersection. | `Timezone Logic` `Data Filtering` |
-| 34 | **Pre-meeting materials push** — 15 min before meeting, send link + last meeting's summary via IM. | `Scheduling` `Memory Retrieval` |
-| 35 | **Business dinner restaurant recommendation** — Combine boss's dietary preferences, search nearby restaurants, send 3 options. | `Personal Memory` `Web Search` `API Call` |
-| 36 | **Client visit route planning** — Read today's schedule addresses, calculate commute times, estimate departure. | `Maps API` `Time Calculation` `Notification` |
-| 37 | **Focus mode message filtering** — During focus, take over chat app, only alert for "extremely urgent." | `IM API Monitoring` `NLP Priority` |
-| 38 | **Cross-national group chat live translation** — Monitor all-English work group, translate core discussions to Chinese brief. | `Real-time Stream` `Machine Translation` |
-| 39 | **Offboarding asset auto-collection** — On offboarding instruction, send form, compile all assets and handover links. | `RPA` `Info Aggregation` |
-| 40 | **Client birthday / holiday custom greetings** — Daily scan CRM for birthdays, auto-generate personalized greetings. | `DB Query` `Scheduling` `Personalized NLG` |
-| 41 | **Automated interview scheduling** — Multi-round email exchange with candidates, then calendar invite to interviewers. | `Multi-turn Dialog` `Calendar Write` |
-| 42 | **Cross-department process gentle reminder** — Periodically check OA approvals stuck at a node, send polite follow-up. | `Page Scraping/API Poll` `High-EQ NLG` |
-| 43 | **Visitor Wi-Fi auto-distribution** — Guest @s Agent in group, Agent verifies daily visitor list, DMs temp password. | `List Verification` `Trigger Response` |
-| 44 | **IT/admin ticket initial triage** — Classify repair ticket intent, route to network or facilities team. | `Text Classification` `Routing Rules` |
-| 45 | **Post-vacation "catch me up" context restore** — Ask "what did I miss," get progress and key decisions summary per project. | `Log Aggregation` `Summarization` |
+| Case | Description |
+| :--- | :--- |
+| **Complex email intelligent drafting** | **Complex email intelligent drafting** — Given a complaint email and instruction, auto-generate professional reply. <br> **核心能力:** `Context Understanding` `NLG Tone Control` |
+| **Schedule conflict auto-coordination** | **Schedule conflict auto-coordination** — When meeting invite arrives, check calendar; reply with available slots if conflict. <br> **核心能力:** `Calendar API` `Time Logic` `Auto-reply` |
+| **Cross-timezone best meeting time** | **Cross-timezone best meeting time** — Given US/EU/CN participants, exclude sleep hours, recommend intersection. <br> **核心能力:** `Timezone Logic` `Data Filtering` |
+| **Pre-meeting materials push** | **Pre-meeting materials push** — 15 min before meeting, send link + last meeting's summary via IM. <br> **核心能力:** `Scheduling` `Memory Retrieval` |
+| **Business dinner restaurant recommendation** | **Business dinner restaurant recommendation** — Combine boss's dietary preferences, search nearby restaurants, send 3 options. <br> **核心能力:** `Personal Memory` `Web Search` `API Call` |
+| **Client visit route planning** | **Client visit route planning** — Read today's schedule addresses, calculate commute times, estimate departure. <br> **核心能力:** `Maps API` `Time Calculation` `Notification` |
+| **Focus mode message filtering** | **Focus mode message filtering** — During focus, take over chat app, only alert for "extremely urgent." <br> **核心能力:** `IM API Monitoring` `NLP Priority` |
+| **Cross-national group chat live translation** | **Cross-national group chat live translation** — Monitor all-English work group, translate core discussions to Chinese brief. <br> **核心能力:** `Real-time Stream` `Machine Translation` |
+| **Offboarding asset auto-collection** | **Offboarding asset auto-collection** — On offboarding instruction, send form, compile all assets and handover links. <br> **核心能力:** `RPA` `Info Aggregation` |
+| **Client birthday / holiday custom greetings** | **Client birthday / holiday custom greetings** — Daily scan CRM for birthdays, auto-generate personalized greetings. <br> **核心能力:** `DB Query` `Scheduling` `Personalized NLG` |
+| **Automated interview scheduling** | **Automated interview scheduling** — Multi-round email exchange with candidates, then calendar invite to interviewers. <br> **核心能力:** `Multi-turn Dialog` `Calendar Write` |
+| **Cross-department process gentle reminder** | **Cross-department process gentle reminder** — Periodically check OA approvals stuck at a node, send polite follow-up. <br> **核心能力:** `Page Scraping/API Poll` `High-EQ NLG` |
+| **Visitor Wi-Fi auto-distribution** | **Visitor Wi-Fi auto-distribution** — Guest @s Agent in group, Agent verifies daily visitor list, DMs temp password. <br> **核心能力:** `List Verification` `Trigger Response` |
+| **IT/admin ticket initial triage** | **IT/admin ticket initial triage** — Classify repair ticket intent, route to network or facilities team. <br> **核心能力:** `Text Classification` `Routing Rules` |
+| **Post-vacation "catch me up" context restore** | **Post-vacation "catch me up" context restore** — Ask "what did I miss," get progress and key decisions summary per project. <br> **核心能力:** `Log Aggregation` `Summarization` |
 
 ### 4. Project Management & Research
 
 > `Git Integration` `Jira/Trello API` `Web Search` `Vector DB` `Code Execution`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 46 | **Agile board daily inspection** — Read Jira/Trello, summarize "at-risk of delay" tasks, send to PM before end of day. | `PM API` `Data Filter` |
-| 47 | **Fast Code Review assistant** — On new PR, auto-pull code, run basic checks, provide standards suggestions. | `Git/Shell` `Code LLM` `Static Analysis` |
-| 48 | **Industry report auto-downloader** — Monitor consulting websites, download new reports matching keywords. | `Web Change Detection` `Auto Download` `File Mgmt` |
-| 49 | **Patent & technical prior art scan** — Background-compare with public patent database for infringement risks. | `Vector DB` `Text Similarity` |
-| 50 | **Competitor deep background check** — Input company name, auto-collect bid wins, negative news, executive changes. | `Deep Web Search` `Entity Extraction` |
-| 51 | **Daily standup auto-facilitator** — At fixed time, @members in sequence, summarize each person's blockers. | `Scheduled Group Msg` `Dialog Summary` |
-| 52 | **API docs auto-sync** — Monitor backend routing comment changes, auto-generate latest API docs. | `File Monitoring` `Code Parsing` |
-| 53 | **PRD logic error-checking** — Check new PRD against historical docs, flag function contradictions or missing logic. | `Historical Text Diff` `Business Logic Reasoning` |
-| 54 | **Online bug log clustering** — Denoise and cluster thousands of error logs, find top-3 root causes. | `Batch Data Processing` `ML Clustering` |
-| 55 | **Non-standard vendor quote comparison** — Extract PDFs from multiple vendors, normalize parameters, generate comparison Excel. | `Complex Table OCR` `Data Alignment` |
-| 56 | **Local disk space alert & cleanup** — Monitor disk; when near full, identify large useless log files and ask for confirmation. | `OS Commands` `Conditional Trigger` |
-| 57 | **Vertical academic paper tracking** — Weekly auto-search arXiv/PubMed, generate translated abstracts list. | `Academic API` `PDF Processing` `Domain MT` |
-| 58 | **Project budget burn monitoring** — Link invoice folder to budget table; alert when budget 80% consumed. | `Cross-file Calculation` `Threshold Trigger` |
-| 59 | **Software license expiry reminder** — Read subscription list, auto-draft renewal email 30 days before expiry. | `DB Read` `Time Calculation` `Email Draft` |
-| 60 | **App store review sentiment word cloud** — Pull latest reviews, segment words, generate pain point word cloud. | `Store Scraping` `Segmentation` `Image Gen` |
+| Case | Description |
+| :--- | :--- |
+| **Agile board daily inspection** | **Agile board daily inspection** — Read Jira/Trello, summarize "at-risk of delay" tasks, send to PM before end of day. <br> **核心能力:** `PM API` `Data Filter` |
+| **Fast Code Review assistant** | **Fast Code Review assistant** — On new PR, auto-pull code, run basic checks, provide standards suggestions. <br> **核心能力:** `Git/Shell` `Code LLM` `Static Analysis` |
+| **Industry report auto-downloader** | **Industry report auto-downloader** — Monitor consulting websites, download new reports matching keywords. <br> **核心能力:** `Web Change Detection` `Auto Download` `File Mgmt` |
+| **Patent & technical prior art scan** | **Patent & technical prior art scan** — Background-compare with public patent database for infringement risks. <br> **核心能力:** `Vector DB` `Text Similarity` |
+| **Competitor deep background check** | **Competitor deep background check** — Input company name, auto-collect bid wins, negative news, executive changes. <br> **核心能力:** `Deep Web Search` `Entity Extraction` |
+| **Daily standup auto-facilitator** | **Daily standup auto-facilitator** — At fixed time, @members in sequence, summarize each person's blockers. <br> **核心能力:** `Scheduled Group Msg` `Dialog Summary` |
+| **API docs auto-sync** | **API docs auto-sync** — Monitor backend routing comment changes, auto-generate latest API docs. <br> **核心能力:** `File Monitoring` `Code Parsing` |
+| **PRD logic error-checking** | **PRD logic error-checking** — Check new PRD against historical docs, flag function contradictions or missing logic. <br> **核心能力:** `Historical Text Diff` `Business Logic Reasoning` |
+| **Online bug log clustering** | **Online bug log clustering** — Denoise and cluster thousands of error logs, find top-3 root causes. <br> **核心能力:** `Batch Data Processing` `ML Clustering` |
+| **Non-standard vendor quote comparison** | **Non-standard vendor quote comparison** — Extract PDFs from multiple vendors, normalize parameters, generate comparison Excel. <br> **核心能力:** `Complex Table OCR` `Data Alignment` |
+| **Local disk space alert & cleanup** | **Local disk space alert & cleanup** — Monitor disk; when near full, identify large useless log files and ask for confirmation. <br> **核心能力:** `OS Commands` `Conditional Trigger` |
+| **Vertical academic paper tracking** | **Vertical academic paper tracking** — Weekly auto-search arXiv/PubMed, generate translated abstracts list. <br> **核心能力:** `Academic API` `PDF Processing` `Domain MT` |
+| **Project budget burn monitoring** | **Project budget burn monitoring** — Link invoice folder to budget table; alert when budget 80% consumed. <br> **核心能力:** `Cross-file Calculation` `Threshold Trigger` |
+| **Software license expiry reminder** | **Software license expiry reminder** — Read subscription list, auto-draft renewal email 30 days before expiry. <br> **核心能力:** `DB Read` `Time Calculation` `Email Draft` |
+| **App store review sentiment word cloud** | **App store review sentiment word cloud** — Pull latest reviews, segment words, generate pain point word cloud. <br> **核心能力:** `Store Scraping` `Segmentation` `Image Gen` |
 
 ### 5. Copywriting & Creative Strategy
 
 > `NLG Style Control` `Web Trending` `Long-form Planning` `Multi-language`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 61 | **Viral social title A/B generator** — Feed a dry draft, combine with trending words, generate 10 attention-grabbing titles. | `Trending Scraping` `Stylized NLG` |
-| 62 | **SEO content optimization & rewrite** — Analyze existing blog post, optimize keyword density and structure. | `SEO Rules` `Text Restructuring` |
-| 63 | **Large speech / launch event structuring** — Input key highlights, auto-derive PPT speaking outline with hook and closing. | `Logic Planning` `Long-form Framework` |
-| 64 | **Corporate news release expander** — Turn sparse data points into a polished thousand-word PR article. | `NLG Register Mimicry` `Info Expansion` |
-| 65 | **Brand origin story writing** — Combine founder quotes and early photos, craft emotionally resonant brand story. | `Multimodal` `Memory Synthesis` `Emotional NLG` |
-| 66 | **B2B sales pitch customization** — Convert generic product intro into industry-specific pitches (medical/education/manufacturing). | `Vertical Domain Knowledge` `Text Adaptation` |
-| 67 | **Cross-cultural transcreation** — Not just translate, but rewrite for Japanese or Middle East cultural context and idioms. | `Cross-cultural Context` `Deep NLP` |
-| 68 | **PR crisis statement drafting** — When negative sentiment detected, generate "clarification + apology + measures" draft in 5 min. | `Crisis PR Template` `High-sensitivity NLG` |
-| 69 | **Business plan (BP) professional polish** — Rewrite colloquial startup ideas into investor-facing copy with TAM and business model. | `Business Reasoning` `Professional Terminology` |
-| 70 | **Brand slogan brainstorming engine** — Input selling points, use puns/rhymes/contrast to batch-generate memorable slogans. | `Rhetorical Modeling` `Short-text Creative Gen` |
-| 71 | **Novel / script → storyboard script** — Auto-decompose novel text into "scene / character / dialogue / shot type" storyboard format. | `Text Structuring` `Film Industry Terms` |
-| 72 | **Podcast show notes extraction** — From transcript, auto-extract timestamps, guest quotes, and mentioned links. | `Long-text Summary` `Entity Extraction` |
-| 73 | **Marketing copy multi-platform adaptation** — Same event auto-generates WeChat Moments / Xiaohongshu / Zhihu versions. | `Platform Tone Learning` `Multi-style Conversion` |
-| 74 | **Long-form fiction setting consistency check** — Monitor setting database; alert if character/world details contradict earlier chapters. | `Knowledge Graph` `Long-context Consistency` |
-| 75 | **Interactive game plot multi-branch derivation** — Given a key plot decision, derive 3 outcomes matching character personalities. | `Character Model` `Logic Branch Reasoning` |
+| Case | Description |
+| :--- | :--- |
+| **Viral social title A/B generator** | **Viral social title A/B generator** — Feed a dry draft, combine with trending words, generate 10 attention-grabbing titles. <br> **核心能力:** `Trending Scraping` `Stylized NLG` |
+| **SEO content optimization & rewrite** | **SEO content optimization & rewrite** — Analyze existing blog post, optimize keyword density and structure. <br> **核心能力:** `SEO Rules` `Text Restructuring` |
+| **Large speech / launch event structuring** | **Large speech / launch event structuring** — Input key highlights, auto-derive PPT speaking outline with hook and closing. <br> **核心能力:** `Logic Planning` `Long-form Framework` |
+| **Corporate news release expander** | **Corporate news release expander** — Turn sparse data points into a polished thousand-word PR article. <br> **核心能力:** `NLG Register Mimicry` `Info Expansion` |
+| **Brand origin story writing** | **Brand origin story writing** — Combine founder quotes and early photos, craft emotionally resonant brand story. <br> **核心能力:** `Multimodal` `Memory Synthesis` `Emotional NLG` |
+| **B2B sales pitch customization** | **B2B sales pitch customization** — Convert generic product intro into industry-specific pitches (medical/education/manufacturing). <br> **核心能力:** `Vertical Domain Knowledge` `Text Adaptation` |
+| **Cross-cultural transcreation** | **Cross-cultural transcreation** — Not just translate, but rewrite for Japanese or Middle East cultural context and idioms. <br> **核心能力:** `Cross-cultural Context` `Deep NLP` |
+| **PR crisis statement drafting** | **PR crisis statement drafting** — When negative sentiment detected, generate "clarification + apology + measures" draft in 5 min. <br> **核心能力:** `Crisis PR Template` `High-sensitivity NLG` |
+| **Business plan (BP) professional polish** | **Business plan (BP) professional polish** — Rewrite colloquial startup ideas into investor-facing copy with TAM and business model. <br> **核心能力:** `Business Reasoning` `Professional Terminology` |
+| **Brand slogan brainstorming engine** | **Brand slogan brainstorming engine** — Input selling points, use puns/rhymes/contrast to batch-generate memorable slogans. <br> **核心能力:** `Rhetorical Modeling` `Short-text Creative Gen` |
+| **Novel / script → storyboard script** | **Novel / script → storyboard script** — Auto-decompose novel text into "scene / character / dialogue / shot type" storyboard format. <br> **核心能力:** `Text Structuring` `Film Industry Terms` |
+| **Podcast show notes extraction** | **Podcast show notes extraction** — From transcript, auto-extract timestamps, guest quotes, and mentioned links. <br> **核心能力:** `Long-text Summary` `Entity Extraction` |
+| **Marketing copy multi-platform adaptation** | **Marketing copy multi-platform adaptation** — Same event auto-generates WeChat Moments / Xiaohongshu / Zhihu versions. <br> **核心能力:** `Platform Tone Learning` `Multi-style Conversion` |
+| **Long-form fiction setting consistency check** | **Long-form fiction setting consistency check** — Monitor setting database; alert if character/world details contradict earlier chapters. <br> **核心能力:** `Knowledge Graph` `Long-context Consistency` |
+| **Interactive game plot multi-branch derivation** | **Interactive game plot multi-branch derivation** — Given a key plot decision, derive 3 outcomes matching character personalities. <br> **核心能力:** `Character Model` `Logic Branch Reasoning` |
 
 ### 6. Social Media & Marketing Automation
 
 > `Browser Automation` `RPA` `IM API` `Real-time Monitoring`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 76 | **Xiaohongshu "trendy" post direct output** — Upload product photo, auto-add emoji-heavy review copy. | `Visual Feature Extract` `Stylized NLG` |
-| 77 | **Short-video golden 3-second script** — Scrape TikTok/Douyin trends, generate hook script and camera direction. | `Trend Scraping` `Audio-visual Language` |
-| 78 | **Social media fan humanized auto-reply** — Randomly humanized auto-reply to common repetitive questions. | `API Monitoring` `Intent ID` `Varied Reply` |
-| 79 | **Competitor social media viral post analysis** — Daily scrape competitor's top posts, reverse-engineer topic angle. | `Web Data Scraping` `Attribution NLP` |
-| 80 | **Matrix account one-click content distribution** — Put article in folder, auto-publish to WeChat / Zhihu / Toutiao. | `File Monitoring` `RPA or API` |
-| 81 | **Full giveaway campaign management** — Auto-post giveaway, clean fake accounts, randomly select real fans, DM winners. | `Platform API` `Code Execution` `Random Algo` |
-| 82 | **Brand annual marketing calendar reminders** — One week ahead, push brand-aligned marketing copy and strategy for holidays. | `Long-term Calendar Memory` `Scheduling` `Creative Synthesis` |
-| 83 | **Live room moderation & comment distillation** — Real-time ingest comment stream, auto-ban toxic words, surface top-3 audience questions. | `Stream Processing` `Sensitive Word Filter` `Aggregation` |
-| 84 | **Viral poster dynamic update** — Based on user's referral tier, auto-run script to replace invite code and copy in poster. | `Image Processing Lib` `Dynamic Synthesis` |
-| 85 | **KOL batch custom outreach** — Import blogger list, batch-generate heartfelt collaboration invites praising specific posts, and send. | `Web Content Quick Read` `Email Automation` `NLG` |
-| 86 | **Trending event rapid content creation** — On industry-related hot topic, generate high-quality commentary draft in 10 min. | `High-frequency Monitoring` `Rapid Gen` |
-| 87 | **Real user UGC collection net** — Auto-search all brand mentions, compile positive-sentiment image-text screenshots. | `Full Web Search` `Sentiment Classification` `Screenshot` |
-| 88 | **Executive / IP persona WeChat script** — Custom daily posting plan, remind and provide draft for one-click publish. | `Persona Prompt Tuning` `Scheduled Task Mgmt` |
+| Case | Description |
+| :--- | :--- |
+| **Xiaohongshu "trendy" post direct output** | **Xiaohongshu "trendy" post direct output** — Upload product photo, auto-add emoji-heavy review copy. <br> **核心能力:** `Visual Feature Extract` `Stylized NLG` |
+| **Short-video golden 3-second script** | **Short-video golden 3-second script** — Scrape TikTok/Douyin trends, generate hook script and camera direction. <br> **核心能力:** `Trend Scraping` `Audio-visual Language` |
+| **Social media fan humanized auto-reply** | **Social media fan humanized auto-reply** — Randomly humanized auto-reply to common repetitive questions. <br> **核心能力:** `API Monitoring` `Intent ID` `Varied Reply` |
+| **Competitor social media viral post analysis** | **Competitor social media viral post analysis** — Daily scrape competitor's top posts, reverse-engineer topic angle. <br> **核心能力:** `Web Data Scraping` `Attribution NLP` |
+| **Matrix account one-click content distribution** | **Matrix account one-click content distribution** — Put article in folder, auto-publish to WeChat / Zhihu / Toutiao. <br> **核心能力:** `File Monitoring` `RPA or API` |
+| **Full giveaway campaign management** | **Full giveaway campaign management** — Auto-post giveaway, clean fake accounts, randomly select real fans, DM winners. <br> **核心能力:** `Platform API` `Code Execution` `Random Algo` |
+| **Brand annual marketing calendar reminders** | **Brand annual marketing calendar reminders** — One week ahead, push brand-aligned marketing copy and strategy for holidays. <br> **核心能力:** `Long-term Calendar Memory` `Scheduling` `Creative Synthesis` |
+| **Live room moderation & comment distillation** | **Live room moderation & comment distillation** — Real-time ingest comment stream, auto-ban toxic words, surface top-3 audience questions. <br> **核心能力:** `Stream Processing` `Sensitive Word Filter` `Aggregation` |
+| **Viral poster dynamic update** | **Viral poster dynamic update** — Based on user's referral tier, auto-run script to replace invite code and copy in poster. <br> **核心能力:** `Image Processing Lib` `Dynamic Synthesis` |
+| **KOL batch custom outreach** | **KOL batch custom outreach** — Import blogger list, batch-generate heartfelt collaboration invites praising specific posts, and send. <br> **核心能力:** `Web Content Quick Read` `Email Automation` `NLG` |
+| **Trending event rapid content creation** | **Trending event rapid content creation** — On industry-related hot topic, generate high-quality commentary draft in 10 min. <br> **核心能力:** `High-frequency Monitoring` `Rapid Gen` |
+| **Real user UGC collection net** | **Real user UGC collection net** — Auto-search all brand mentions, compile positive-sentiment image-text screenshots. <br> **核心能力:** `Full Web Search` `Sentiment Classification` `Screenshot` |
+| **Executive / IP persona WeChat script** | **Executive / IP persona WeChat script** — Custom daily posting plan, remind and provide draft for one-click publish. <br> **核心能力:** `Persona Prompt Tuning` `Scheduled Task Mgmt` |
 
 ### 7. Multimedia, Design & Code Support
 
 > `Image Processing` `Code Gen` `Shell/FFmpeg` `Vector DB` `Multimodal`
 
-| # | Case | Key Capabilities |
-|---|---|---|
-| 89 | **AI image prompt enhancer** — Input "cyberpunk girl," expand to full Midjourney prompt with lighting and engine params. | `Prompt Engineering` `Design Vocabulary` |
-| 90 | **Local untagged asset library natural language search** — Scan thousands of unnamed assets, add vector tags, search by description. | `Multimodal Tagging` `Local Vector DB` |
-| 91 | **Video rough-cut marking** — From audio transcript, auto-cut silent segments, record valid segment timestamps for editor. | `Audio-video Transcript` `Logic Calculation` |
-| 92 | **Virtual voice-over TTS pre-processing** — Convert colloquial text to TTS-ready format, annotate emphasis and pauses. | `Phonology Rules` `SSML Format Output` |
-| 93 | **Event invitation batch auto-synthesis** — Read 100-person CSV, run Python with design template, render 100 personalized invitation images. | `Code Execution (Image Render)` `Batch File Write` |
-| 94 | **Hand-drawn sketch → front-end prototype** — Send whiteboard sketch photo, Agent generates running HTML/Tailwind CSS page. | `Visual Layout Understanding` `Code Gen` `Local Preview` |
-| 95 | **Animation script keyframe timeline calculation** — Based on VO script, calculate speaking pace, generate timestamped keyframe script for AE. | `Data Calculation` `Specific File Format Gen` |
-| 96 | **Complex game plot tree visualization** — Read branching story text, auto-convert to Mermaid code, render into flow network. | `Logic Topology Extract` `Mermaid Code Draw` |
-| 97 | **All-platform idea fragment collector** — Send flash ideas anytime, auto-tag and file into correct Notion creative project. | `Multi-endpoint Input` `NLP Classification` `Knowledge API Write` |
-| 98 | **Music composition chord recommendation** — Input melody direction or mood, recommend 3 chord progression arrangements. | `Domain Knowledge (Music Theory)` `Logic Derivation` |
-| 99 | **Personal e-book EPUB one-click packaging** — Combine Markdown chapters and cover image into standard EPUB via local script. | `Directory Parsing` `Compile Script Execution` |
-| 100 | **AI assistant self-"weekly review & evolution"** — Agent reviews its own execution logs, generates "how to give me better instructions" report. | `Self-reflection` `Long-text Summary` `NLG` |
+| Case | Description |
+| :--- | :--- |
+| **AI image prompt enhancer** | **AI image prompt enhancer** — Input "cyberpunk girl," expand to full Midjourney prompt with lighting and engine params. <br> **核心能力:** `Prompt Engineering` `Design Vocabulary` |
+| **Local untagged asset library natural language search** | **Local untagged asset library natural language search** — Scan thousands of unnamed assets, add vector tags, search by description. <br> **核心能力:** `Multimodal Tagging` `Local Vector DB` |
+| **Video rough-cut marking** | **Video rough-cut marking** — From audio transcript, auto-cut silent segments, record valid segment timestamps for editor. <br> **核心能力:** `Audio-video Transcript` `Logic Calculation` |
+| **Virtual voice-over TTS pre-processing** | **Virtual voice-over TTS pre-processing** — Convert colloquial text to TTS-ready format, annotate emphasis and pauses. <br> **核心能力:** `Phonology Rules` `SSML Format Output` |
+| **Event invitation batch auto-synthesis** | **Event invitation batch auto-synthesis** — Read 100-person CSV, run Python with design template, render 100 personalized invitation images. <br> **核心能力:** `Code Execution (Image Render)` `Batch File Write` |
+| **Hand-drawn sketch → front-end prototype** | **Hand-drawn sketch → front-end prototype** — Send whiteboard sketch photo, Agent generates running HTML/Tailwind CSS page. <br> **核心能力:** `Visual Layout Understanding` `Code Gen` `Local Preview` |
+| **Animation script keyframe timeline calculation** | **Animation script keyframe timeline calculation** — Based on VO script, calculate speaking pace, generate timestamped keyframe script for AE. <br> **核心能力:** `Data Calculation` `Specific File Format Gen` |
+| **Complex game plot tree visualization** | **Complex game plot tree visualization** — Read branching story text, auto-convert to Mermaid code, render into flow network. <br> **核心能力:** `Logic Topology Extract` `Mermaid Code Draw` |
+| **All-platform idea fragment collector** | **All-platform idea fragment collector** — Send flash ideas anytime, auto-tag and file into correct Notion creative project. <br> **核心能力:** `Multi-endpoint Input` `NLP Classification` `Knowledge API Write` |
+| **Music composition chord recommendation** | **Music composition chord recommendation** — Input melody direction or mood, recommend 3 chord progression arrangements. <br> **核心能力:** `Domain Knowledge (Music Theory)` `Logic Derivation` |
+| **Personal e-book EPUB one-click packaging** | **Personal e-book EPUB one-click packaging** — Combine Markdown chapters and cover image into standard EPUB via local script. <br> **核心能力:** `Directory Parsing` `Compile Script Execution` |
+| **AI assistant self-"weekly review & evolution"** | **AI assistant self-"weekly review & evolution"** — Agent reviews its own execution logs, generates "how to give me better instructions" report. <br> **核心能力:** `Self-reflection` `Long-text Summary` `NLG` |
 
 ---
 
