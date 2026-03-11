@@ -100,7 +100,7 @@ cd awesome-workbuddy-use-cases
 | `日历 API` | 读写日历事件 |
 | `向量检索/RAG` | 对本地知识库进行语义搜索 |
 | `长期记忆` | 持久化的长期信息召回 |
-| `消息推送` | 通过 Telegram、WhatsApp 等发送提醒 |
+| `消息推送` | 通过飞书、企业微信、钉钉、WhatsApp 等发送提醒 |
 | `图像处理` | 使用 Pillow 等库处理图片 |
 | `Git/Shell` | Git 操作、代码仓库管理 |
 | `RPA` | 面向遗留系统的机器人流程自动化 |
